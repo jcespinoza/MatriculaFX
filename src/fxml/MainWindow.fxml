@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root type="AnchorPane" id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="533.0" xmlns:fx="http://javafx.com/fxml">
+  <children>
+    <GridPane id="gridPane1" fx:id="mainPane" prefHeight="363.0" prefWidth="532.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+      <children>
+        <Label id="label1" alignment="CENTER" contentDisplay="CENTER" prefHeight="62.0" prefWidth="464.0" text="Seleccione el momento de su matricula y presione el boton para saber cuando debe pagar." textAlignment="CENTER" textFill="#0052cc" wrapText="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+          <font>
+            <Font name="Candara" size="20.0" fx:id="x1" />
+          </font>
+          <GridPane.margin>
+            <Insets top="10.0" />
+          </GridPane.margin>
+        </Label>
+        <Label id="label2" fx:id="result" alignment="CENTER" contentDisplay="CENTER" font="$x1" prefHeight="56.0" prefWidth="498.0" textAlignment="CENTER" textFill="#009987" wrapText="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+        <Button id="button1" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#handleCalculate" prefHeight="30.0" prefWidth="119.0" text="Calcular" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+          <font>
+            <Font name="System Bold" size="12.0" />
+          </font>
+        </Button>
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="100.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="118.0" minHeight="10.0" percentHeight="14.0" prefHeight="51.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="195.0" minHeight="10.0" percentHeight="60.0" prefHeight="155.0" vgrow="ALWAYS" />
+        <RowConstraints maxHeight="121.0" minHeight="10.0" percentHeight="8.0" prefHeight="74.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="121.0" minHeight="10.0" percentHeight="18.0" prefHeight="84.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+  </children>
+</fx:root>
